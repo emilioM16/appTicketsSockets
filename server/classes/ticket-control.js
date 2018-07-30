@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const { Ticket }  = require('./ticket');
 
 class TicketControl {
@@ -29,7 +30,7 @@ class TicketControl {
             ultimosCuatro: this.ultimosCuatro
         }
         let jsonDataString = JSON.stringify(jsonData);
-        fs.writeFileSync('data/data.json', jsonDataString);
+        fs.writeFileSync(path.resolve(__dirname, '../data','data.json'), jsonDataString);
     }
 
 
