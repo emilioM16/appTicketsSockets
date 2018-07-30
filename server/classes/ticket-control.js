@@ -29,7 +29,7 @@ class TicketControl {
             ultimosCuatro: this.ultimosCuatro
         }
         let jsonDataString = JSON.stringify(jsonData);
-        fs.writeFileSync('../data/data.json', jsonDataString);
+        fs.writeFileSync('data/data.json', jsonDataString);
     }
 
 
